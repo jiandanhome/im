@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+
+            android:id="@+id/chat_tips_operationId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textColor="@color/clore_5B6B92"
+            android:textSize="14.2sp"
+            tools:text="\'8888\'" />
+
+
+        <TextView
+            android:id="@+id/chat_tips_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_toRightOf="@+id/chat_tips_operationId"
+            android:clickable="true"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textColor="@color/text_tips_color"
+            android:textSize="14.2sp"
+            tools:text="转让群主给" />
+
+        <TextView
+            android:id="@+id/chat_tips_acceptId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_toRightOf="@+id/chat_tips_tv"
+            android:clickable="true"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textColor="@color/clore_5B6B92"
+            android:textSize="14.2sp"
+            tools:text="转让群主给\'99999\'" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

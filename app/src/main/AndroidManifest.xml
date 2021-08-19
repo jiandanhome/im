@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.eju.cy.audiovideosample">
+
+
+    <uses-sdk tools:overrideLibrary="tv.danmaku.ijk.media.player_arm64, tv.danmaku.ijk.media.player_x86_64"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".IApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activity.MyGroupListActivity"></activity>
+        <activity android:name=".menu.AddMoreActivity" />
+        <activity android:name=".menu.StartC2CChatActivity" />
+        <activity android:name=".menu.StartGroupChatActivity" />
+        <activity android:name=".activity.FriendProfileActivity" />
+        <activity android:name=".activity.TestActivity" />
+        <activity
+            android:name=".activity.GroupListActivity"
+            android:label="我的圈子" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.ContacActivity" />
+        <activity android:name=".activity.SessionListActivity" />
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!--群视频通话-包括后续的单聊视频通话-->
+        <service
+            android:name="com.eju.cy.audiovideo.trtcs.service.CallService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

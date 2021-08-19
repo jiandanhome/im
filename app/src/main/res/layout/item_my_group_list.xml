@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/im_portrait"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+
+        android:src="@drawable/add_group_member" />
+
+
+    <TextView
+
+        android:id="@+id/tv_guoup_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/im_portrait"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/im_portrait"
+        tools:text="新消息的的的的（200）" />
+
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/im_portrait"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/im_portrait"
+        tools:text="张三丰 ： 你好啊" />
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/im_portrait"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        tools:text="9.00" />
+
+
+</RelativeLayout>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+
+    app:bl_corners_radius="8dp"
+    app:bl_solid_color="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="11dp">
+
+        <TextView
+            android:id="@+id/tv_name_and_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp"
+            tools:text="李凯|13975561338" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_body"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:layout_below="@id/rl_head"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="11dp"
+        android:background="@drawable/icon_bg_housing">
+
+
+        <ImageView
+            android:id="@+id/iv_portrait"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="22dp"
+            tools:src="@drawable/icon_im_yy" />
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_portrait"
+            android:layout_alignLeft="@+id/iv_portrait"
+            android:layout_alignRight="@+id/iv_portrait"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/color_353D53"
+            android:textSize="17sp"
+            tools:text="李凯" />
+
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_toRightOf="@+id/iv_phone"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color_353D53"
+            android:textSize="12sp"
+            tools:text="13975561338" />
+
+
+        <ImageView
+            android:id="@+id/iv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_phone"
+            android:layout_alignBottom="@+id/tv_phone"
+            android:layout_marginLeft="22dp"
+            android:src="@drawable/icon_im_phone" />
+
+
+        <TextView
+            android:id="@+id/im_tv_agent_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_phone"
+            android:layout_toRightOf="@+id/iv_address"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color_353D53"
+            android:textSize="12sp"
+            tools:text="易居房友 延长路门店易居房友 延长路门店易居房友 延长路门店易居房友 延长路门店易居房友 延长路门店易居房友 延长路门店" />
+
+        <ImageView
+            android:id="@+id/iv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/im_tv_agent_address"
+            android:layout_alignBottom="@+id/im_tv_agent_address"
+            android:layout_marginLeft="22dp"
+
+            android:src="@drawable/icon_im_address_business" />
+
+
+        <TextView
+            android:id="@+id/tv_slogan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_portrait"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/color_353D53"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            tools:text="您买的放心\n我就会开心我就会开心" />
+
+
+    </RelativeLayout>
+
+
+    <com.noober.background.view.BLTextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/rl_body"
+        app:bl_corners_radius="8dp"
+        app:bl_solid_color="@color/white" />
+
+
+    <!--    <com.noober.background.view.BLRelativeLayout-->
+    <!--        android:background="@drawable/icon_bg_housing"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:bl_corners_radius="8dp"-->
+    <!--        -->
+    <!--        app:bl_solid_color="@color/white">-->
+
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/iv_portrait"-->
+    <!--            android:layout_width="59dp"-->
+    <!--            android:layout_height="59dp"-->
+    <!--            android:layout_marginLeft="20dp"-->
+    <!--            android:layout_marginTop="20dp"-->
+    <!--            tools:src="@drawable/add_group_member" />-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_name"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="27dp"-->
+    <!--            android:layout_alignTop="@+id/iv_portrait"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:layout_marginTop="7dp"-->
+    <!--            android:layout_toRightOf="@+id/iv_portrait"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="18sp"-->
+    <!--            tools:text="李凯" />-->
+
+
+    <!--        <com.noober.background.view.BLTextView-->
+    <!--            android:layout_marginTop="5dp"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--           android:layout_alignTop="@+id/tv_name"-->
+    <!--            android:layout_marginLeft="3.5dp"-->
+    <!--            android:layout_toRightOf="@+id/tv_name"-->
+    <!--            android:gravity="center"-->
+    <!--            android:paddingLeft="10dp"-->
+    <!--            android:paddingRight="10dp"-->
+    <!--            android:text="房产顾问"-->
+    <!--            android:textColor="@color/color_6A7792"-->
+    <!--            android:textSize="11sp"-->
+    <!--            app:bl_corners_radius="8dp"-->
+    <!--            app:bl_solid_color="@color/color_F0F4F8" />-->
+
+    <!--        <TextView-->
+
+    <!--            android:id="@+id/im_tv_agent_address"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="27dp"-->
+    <!--            android:layout_below="@+id/tv_name"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:layout_toRightOf="@+id/iv_portrait"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="12sp"-->
+    <!--            tools:text="上海中原房产马戏城店" />-->
+
+
+    <!--        <View-->
+    <!--            android:id="@+id/vi_lin"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="1dp"-->
+    <!--            android:layout_below="@+id/iv_portrait"-->
+    <!--            android:layout_marginLeft="20dp"-->
+    <!--            android:layout_marginTop="8dp"-->
+    <!--            android:layout_marginRight="20dp"-->
+    <!--            android:layout_marginBottom="8dp"-->
+    <!--            android:background="@drawable/line_stroke" />-->
+
+
+    <!--        <ImageView-->
+
+    <!--            android:id="@+id/iv_phone"-->
+    <!--            android:layout_width="12dp"-->
+    <!--            android:layout_height="12dp"-->
+    <!--            android:layout_alignTop="@+id/tv_phone"-->
+    <!--            android:layout_alignBottom="@+id/tv_phone"-->
+    <!--            android:layout_centerVertical="true"-->
+    <!--            android:layout_marginLeft="20dp"-->
+    <!--            android:layout_marginTop="2dp"-->
+
+
+    <!--            android:src="@drawable/icon_im_phone" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_marginLeft="2dp"-->
+    <!--            android:id="@+id/tv_phone"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@+id/vi_lin"-->
+    <!--            android:layout_toRightOf="@+id/iv_phone"-->
+    <!--            android:textColor="@color/color_6A7792"-->
+    <!--            tools:text="13975561338" />-->
+
+
+    <!--        <TextView-->
+    <!--            android:layout_marginLeft="20dp"-->
+    <!--            android:layout_marginTop="8dp"-->
+    <!--            android:id="@+id/tv_slogan"-->
+    <!--            tools:text="从业房产八十年从业房产八十年从业房产八十"-->
+    <!--            android:layout_below="@+id/tv_phone"-->
+    <!--            android:textSize="12sp"-->
+    <!--            android:textColor="@color/color_2B3751"-->
+    <!--            android:layout_marginBottom="10dp"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"/>-->
+
+
+    <!--    </com.noober.background.view.BLRelativeLayout>-->
+
+
+</com.noober.background.view.BLRelativeLayout>

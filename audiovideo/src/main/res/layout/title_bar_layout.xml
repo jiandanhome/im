@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/page_title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <LinearLayout
+        android:id="@+id/page_title_left_group"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:minWidth="80dp"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp">
+
+        <ImageView
+            android:id="@+id/page_title_left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:clickable="false"
+            android:src="@drawable/title_bar_back" />
+
+        <TextView
+            android:id="@+id/page_title_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black_font_color"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+
+        >
+
+        <TextView
+            android:id="@+id/page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/black_font_color"
+            android:textSize="16.3sp"
+            android:textStyle="bold"
+            tools:text="张三" />
+
+
+        <com.noober.background.view.BLTextView
+            android:id="@+id/tv_user_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/page_title"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/color_6A7792"
+            android:textSize="11sp"
+            app:bl_corners_radius="8dp"
+            app:bl_solid_color="@color/color_F3F7FB"
+            tools:text="易楼经纪人" />
+
+
+        <TextView
+            android:id="@+id/tv_group_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/page_title"
+            android:gravity="center"
+            android:textColor="@color/black_font_color"
+            android:textSize="16.3sp"
+            android:textStyle="bold"
+            tools:text="(100)" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/page_title_right_group"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical|right"
+        android:minWidth="80dp"
+        android:orientation="horizontal"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/page_title_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/black_font_color"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/page_title_right_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:clickable="false"
+            android:src="@drawable/ic_personal_member" />
+    </LinearLayout>
+
+</RelativeLayout>

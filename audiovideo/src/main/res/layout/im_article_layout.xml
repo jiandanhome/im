@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_body"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/bg_article_other">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp">
+
+        <ImageView
+            android:id="@+id/iv_article_url"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:visibility="gone"
+            tools:src="@drawable/icon_im_yy" />
+
+
+        <ImageView
+            android:id="@+id/iv_article_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_article_url"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/iv_article_url"
+            android:src="@drawable/icon_im_article_link" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_article_url"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_article_icon"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/color_23242A"
+            android:textSize="16sp"
+            tools:text="经纪圈如何营销，如果 ，让我…" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

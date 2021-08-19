@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_left"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+   
+    android:paddingLeft="14.85dp"
+    android:paddingTop="12dp">
+
+    <com.eju.cy.audiovideo.modules.conversation.base.ConversationIconView
+        android:id="@+id/conversation_icon"
+        android:layout_width="@dimen/conversation_avatar_width"
+        android:layout_height="@dimen/conversation_avatar_height" />
+    
+    
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_user_angle"
+        android:layout_marginRight="-5dp"
+        android:layout_marginBottom="-5dp"
+        android:src="@drawable/icon_im_angle"
+        android:layout_alignBottom="@+id/conversation_icon"
+        android:layout_alignRight="@+id/conversation_icon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"/>
+    
+    
+    
+
+    <RelativeLayout
+
+        android:layout_toRightOf="@+id/conversation_icon"
+        android:layout_width="match_parent"
+        android:layout_height="62.3dp"
+        android:paddingLeft="11.43dp"
+        android:paddingTop="1.37dp"
+        android:paddingRight="18.11dp">
+
+        <TextView
+            android:id="@+id/conversation_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:gravity="top|left"
+            android:singleLine="true"
+            android:text="aaa"
+            android:textColor="@color/black_font_color"
+            android:textSize="16.3sp" />
+
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+
+            android:layout_marginTop="5dp"
+            android:id="@+id/id_flowlayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/conversation_title"
+            android:layout_alignBottom="@+id/conversation_title"
+            android:layout_toRightOf="@+id/conversation_title"
+
+            app:max_select="2" />
+
+
+        <TextView
+            android:id="@+id/conversation_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+
+            android:textColor="@color/conversation_time_color"
+            android:textSize="11.14sp" />
+
+        <TextView
+            android:id="@+id/conversation_last_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view_line"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="48dp"
+            android:layout_marginBottom="15.54dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/list_bottom_text_bg"
+            android:textSize="12.86sp" />
+
+
+        <com.eju.cy.audiovideo.component.UnreadCountTextView
+            android:id="@+id/conversation_unread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view_line"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15.54dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textColor="#fff"
+            android:textSize="10sp" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="12dp"
+            android:background="@color/split_lint_color" />
+    </RelativeLayout>
+
+</RelativeLayout>

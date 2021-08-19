@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_222328">
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <com.noober.background.view.BLImageView
+        android:id="@+id/iv_portrait"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:scaleType="fitXY"
+        app:bl_corners_radius="5dp" />
+
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/iv_portrait"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_user_name"
+        android:gravity="center"
+        android:text="正在等待对方接受邀请"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_mic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/btn_exit"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_av_jingyinyikaiqi" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+
+            android:id="@+id/btn_exit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_av_guaduan" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_handsfree"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/btn_exit"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_tingtong_im_sta" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp">
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_alignTop="@+id/ll_close"
+            android:layout_alignBottom="@+id/ll_close"
+            android:id="@+id/ll_jy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical"
+           >
+
+            <ImageView
+                android:id="@+id/im_jy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_yy_jy" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="静音"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/icon_yy_guaduan" />
+
+            <TextView
+                android:id="@+id/tv_close_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_alignTop="@+id/ll_close"
+            android:layout_alignBottom="@+id/ll_close"
+            android:id="@+id/ll_wf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical"
+           >
+
+            <ImageView
+                android:id="@+id/im_wf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_yy_wf_close" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="外放"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
